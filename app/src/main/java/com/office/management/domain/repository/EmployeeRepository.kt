@@ -10,6 +10,6 @@ import com.office.management.domain.common.Result
 
 interface EmployeeRepository {
     suspend fun getEmployees(): Flow<Result<List<Employee>>>
-    suspend fun searchEmployees(): Flow<Result<List<Employee>>>
-    suspend fun getEmployeeById(): Flow<Result<List<Employee>>>
+    suspend fun searchEmployees(query: String): Flow<Result<List<Employee>>>
+    suspend fun getEmployeeById(id: String): Flow<Result<Employee>>
 }
