@@ -11,6 +11,6 @@ import com.office.management.domain.common.Result
 interface AuthRepository {
     suspend fun login(userName: String, password: String): Flow<Result<User>>
     suspend fun logout(): Flow<Result<Unit>>
-    suspend fun getCurrentUser(): Flow<Result<User>>
+    suspend fun getCurrentUser(): Flow<Result<User?>>
     suspend fun isLoggedIn(): Boolean
 }
