@@ -1,6 +1,7 @@
 package com.office.management.domain.usecase
 
 import com.office.management.domain.News
+import com.office.management.domain.common.Result
 import com.office.management.domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
